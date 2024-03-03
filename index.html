@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contatos</title>
-  <link rel="stylesheet" href="./style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Contatos</title>
 </head>
-
 <body>
 
-  <table id="tabelaContatos">
+<h2>Formulário de Contatos</h2>
+
+<!-- Formulário para adicionar contatos -->
+<form id="contactForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    <button type="submit">Cadastrar</button>
+</form>
+
+<!-- Tabela de contatos -->
+<table id="contactsTable">
     <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Telefone</th>
-      </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </tr>
     </thead>
     <tbody>
-
+        <!-- Aqui serão adicionadas as linhas da tabela -->
     </tbody>
-  </table>
+</table>
 
-  <form id="formularioContato">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" required>
-
-    <label for="telefone">Telefone:</label>
-    <input type="text" id="telefone" required>
-
-    <button type="button" onclick="adicionarContato()">Cadastrar</button>
-
-  </form>
-
+<script src="script.js"></script>
 </body>
-<link rel="stylesheet" href="./index.js">
-
 </html>
